@@ -32,15 +32,16 @@ p {
 
 .button {
   padding-left: 30px;
-}
-
-.Centered {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .headerBar {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.mainHeader {
   display: flex;
   flex-direction: row;
 }
