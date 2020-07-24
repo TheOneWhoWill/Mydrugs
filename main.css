@@ -1,4 +1,45 @@
 .headerBar {
   width: 100%;
+  height: 90px;
+}
+body {
+  background-color: #0f1110;
+}
+
+button {
+  color: white;
+  background-color: #0f1110;
+  border-radius: 10px;
   height: 40px;
+  width: 90px;
+  font-size: 25px;
+  border: 2px solid grey;
+  outline: none;
+}
+
+button:hover {
+  height: 44px;
+  width: 99px;
+}
+p {
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.button {
+  padding-left: 30px;
+}
+
+.Centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headerBar {
+  display: flex;
+  flex-direction: row;
 }
