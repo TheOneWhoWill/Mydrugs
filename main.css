@@ -32,16 +32,21 @@ p {
 
 .button {
   padding-left: 30px;
-  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
 }
 
 .headerBar {
+  padding-top: 30px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .mainHeader {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
