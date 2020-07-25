@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Link to the font i want to use -->
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
@@ -9,7 +11,8 @@
 </head>
 <title>MyDrugs | SHOP</title>
 <body>
-  <!-- Actual Content -->
+  <!-- Actual Content, I added the div to distance it from the edge-->
+  <div style="padding:40px;">
   <!-- Product Cards -->
   <div class="product-card">
     <h1>Premium Ecstacy</h1>
@@ -23,32 +26,33 @@
     <div class="product-colors">
       <span class="blue active"
       data-color="#00c3ff"
-      data-pic="url(src\products\blue_pill.png)"></span>
+      data-pic="url(src/products/blue_pill.png)"></span>
       <span class="green"
       data-color="#00e357"
-      data-pic="url(src\products\green_pill.png)"></span>
+      data-pic="url(src/products/green_pill.png)"></span>
       <span class="purple"
       data-color="#b300ff"
-      data-pic="url(src\products\purple_pill.png)"></span>
+      data-pic="url(src/products/purple_pill.png)"></span>
       <span class="red"
       data-color="#f00c0c"
-      data-pic="url(src\products\red_pill.png)"></span>
+      data-pic="url(src/products/red_pill.png)"></span>
     </div>
     <div class="product-info">
       <div class="product-price">₿0.0021</div>
       <a href="#" class="product-button">Add to Cart</a>
     </div>
-    <script>
-      $(".product-colors span").click(function(){
-        $(".product-colors span").removeClass("active");
-        $(this).addClass("active");
-        $("body").css("background",$(this).attr("data-color"));
-        $(".product-price").css("color",$(this).attr("data-color"));
-        $(".product-button").css("color",$(this).attr("data-color"));
-        $(".product-pic").css("background-image",$(this).attr("data-pic"));
-      });
-    </script>
   </div>
+  </div>
+  <script>
+    $(".product-colors span").click(function(){
+          $(".product-colors span").removeClass("active");
+          $(this).addClass("active");
+          $("body").css("background",$(this).attr("data-color"));
+          $(".product-price").css("color",$(this).attr("data-color"));
+          $(".product-button").css("color",$(this).attr("data-color"));
+          $(".product-pic").css("background-image",$(this).attr("data-pic"));
+        });
+  </script>
 
 </body>
 </html>

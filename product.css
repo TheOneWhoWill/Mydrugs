@@ -14,9 +14,8 @@ body {
   width: 400px;
   background: white;
   padding: 40px;
-  left: 50%;
-  top: 50%;
   text-transform: uppercase;
+  position: absolute;
 }
 
 .product-card h1 {
