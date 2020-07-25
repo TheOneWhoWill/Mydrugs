@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #00c3ff;
+  transition: 0.6 linear;
+}
+
+.product-card {
+  width: 400px;
+  background: white;
+  padding: 40px;
+  left: 50%;
+  top: 50%;
+  text-transform: uppercase;
+}
+
+.product-card h1 {
+  font-size:22px;
+  margin-bottom: 4px;
+}
+
+.product-card p{
+  font-size: 13px;
+  color: #bbb;
+}
+
+.product-pic{
+  background-image: url('src/products/blue_pill.png');
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  transition: .6s linear;
+}
+
+.product-colors {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.product-colors span{
+  width: 14px;
+  height: 14px;
+  margin: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.blue {
+  background: #00c3ff;
+}
+
+.green {
+  background: #00e357;
+}
+
+.purple {
+  background: #b300ff;
+}
+
+.red {
+  background: #f00c0c;
+}
+
+.product-colors .active:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  border: 2px solid #8888;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: -4px;
+  top: -4px;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-price {
+  color: #00c3ff;
+  font-size: 26px;
+}
+
+.product-button {
+  margin-left: auto;
+  color: #00c3ff;
+  text-decoration: none;
+  border: 2px solid;
+  padding: 8px 24px;
+  border-radius: 20px;
+  transition: .4s linear;
+}
+
+.product-button:hover {
+  transform: scale(1.06);
+}
