@@ -27,36 +27,41 @@
       <span class="blue active"
       data-color="#00c3ff"
       data-pic="url(src/products/blue_pill.png)"
-      data-id="Blue Pill"></span>
+      data-id="Blue Pill"
+      data-price="₿0.0021"></span>
       <span class="green"
       data-color="#00e357"
       data-pic="url(src/products/green_pill.png)"
-      data-id="Green Pill"></span>
+      data-id="Green Pill"
+      data-price="₿0.0019"></span>
       <span class="purple"
       data-color="#b300ff"
       data-pic="url(src/products/purple_pill.png)"
-      data-id="Purple Pill"></span>
+      data-id="Purple Pill"
+      data-price="₿0.0010"></span>
       <span class="red"
       data-color="#f00c0c"
       data-pic="url(src/products/red_pill.png)"
-      data-id="Red Pill"></span>
+      data-id="Red Pill"
+      data-price="₿0.0017"></span>
     </div>
     <div class="product-info">
-      <div class="product-price">₿0.0021</div>
+      <div id="price" class="product-price">₿0.0021</div>
       <a href="#" class="product-button">Add to Cart</a>
     </div>
   </div>
   </div>
   <script>
     $(".product-colors span").click(function(){
-          $(".product-colors span").removeClass("active");
-          $(this).addClass("active");
-          $("body").css("background",$(this).attr("data-color"));
-          $(".product-price").css("color",$(this).attr("data-color"));
-          $(".product-button").css("color",$(this).attr("data-color"));
-          $(".product-pic").css("background-image",$(this).attr("data-pic"));
-          $("h1").html($(this).attr("data-id"))
-        });
+      $(".product-colors span").removeClass("active");
+      $(this).addClass("active");
+      $("body").css("background",$(this).attr("data-color"));
+      $(".product-price").css("color",$(this).attr("data-color"));
+      $(".product-price").html($(this).attr("data-price"))
+      $(".product-button").css("color",$(this).attr("data-color"));
+      $(".product-pic").css("background-image",$(this).attr("data-pic"));
+      $("h1").html($(this).attr("data-id"))
+    });
   </script>
 
 </body>
