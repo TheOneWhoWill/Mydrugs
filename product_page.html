@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Ion Icons -->
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
   <!-- Jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Link to the font i want to use -->
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
@@ -11,8 +14,14 @@
 </head>
 <title>MyDrugs | SHOP</title>
 <body>
+  <!-- Shopping Cart -->
+  <div style="display:flex;flex-direction:row-reverse;">
+    <ul><li class="span"><a>
+    <ion-icon name="cart-outline"></ion-icon><span>0</span>
+    </li></a></ul>
+  </div>
   <!-- Actual Content, I added the div to distance it from the edge-->
-  <div style="padding:40px;">
+  <div style="padding:40px;display:flex;justify-content:center;">
   <!-- Product Cards -->
   <div class="product-card">
     <h1>Premium Ecstacy</h1>
@@ -63,6 +72,6 @@
       $("h1").html($(this).attr("data-id"))
     });
   </script>
-
+  <script src="src/brain.js"></script>
 </body>
 </html>

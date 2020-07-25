@@ -103,3 +103,15 @@ body {
 .product-button:hover {
   transform: scale(1.06);
 }
+
+.span ion-icon {
+  font-size: 50px;
+}
+
+.span {
+  font-size: 40px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  padding-right: 55px;
+}
