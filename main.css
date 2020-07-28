@@ -7,7 +7,7 @@ body {
   background-color: #0f1110;
 }
 
-button {
+.button {
   color: white;
   background-color: #0f1110;
   border-radius: 10px;
@@ -16,11 +16,8 @@ button {
   font-size: 25px;
   border: 2px solid grey;
   outline: none;
-}
-
-button:hover {
-  height: 44px;
-  width: 99px;
+  top:0;
+  left:0
 }
 
 p {
@@ -35,12 +32,6 @@ p {
   height: 45px;
   width: auto;
   padding-top: 15px;
-}
-
-.button {
-  padding-left: 30px;
-  display: flex;
-  flex-direction: column;
 }
 
 .headerBar {
@@ -61,4 +52,38 @@ p {
 
 a {
   text-decoration: none;
+}
+
+#nextBtn {
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+#prevBtn {
+  height: 10%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  padding-top: 20px;
+  position: relative;
+}
+
+#slide {
+  width: 100%;
+  text-align: center;
+  height: auto;
+  border-radius: 12.5px;
+  user-select: none;
+}
+
+ion-icon {
+  color: white;
+  font-size: 50px;
 }
