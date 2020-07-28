@@ -72,7 +72,9 @@ a {
 
 .container {
   padding-top: 20px;
+  width: 80%;
   position: relative;
+  margin: auto;
 }
 
 #slide {
