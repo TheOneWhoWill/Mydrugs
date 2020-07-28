@@ -10,7 +10,7 @@ function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem('cartNumbers');
 
   if(productNumbers) {
-    document.querySelector('.span span').textContent = productNumbers
+    document.querySelector('.cart-count span').textContent = productNumbers
   }
 }
 
@@ -19,7 +19,7 @@ function cartNumbers() {
   productNumbers = parseInt(productNumbers);
   if(productNumbers) {
     localStorage.setItem('cartNumbers', productNumbers + 1);
-    document.querySelector('.span span').textContent = productNumbers + 1;
+    document.querySelector('.cart-count span').textContent = productNumbers + 1;
   } else {
     localStorage.setItem('cartNumbers', 1);
     document.querySelector('cart span').textContent = 1;

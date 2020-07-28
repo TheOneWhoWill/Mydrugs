@@ -1,3 +1,7 @@
+* {
+  user-select: none;
+}
+
 .headerBar {
   width: 100%;
   height: 90px;
@@ -11,13 +15,12 @@ body {
   color: white;
   background-color: #0f1110;
   border-radius: 10px;
+  justify-content: space-between;
   height: 40px;
   width: 90px;
   font-size: 25px;
   border: 2px solid grey;
   outline: none;
-  top:0;
-  left:0
 }
 
 p {
@@ -35,9 +38,7 @@ p {
 }
 
 .headerBar {
-  padding-top: 30px;
   display: flex;
-  justify-content: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
