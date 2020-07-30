@@ -13,17 +13,17 @@
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
   rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="product.css">
+  <link rel="stylesheet" type="text/css" href="CSS/product.css">
 </head>
 <title>MyDrugs | SHOP</title>
 <body>
   <!-- Shopping Cart -->
   <div style="display:flex;flex-direction:row-reverse;">
-    <a class="cart-count"><ion-icon name="cart-outline"></ion-icon><span>0</span></a>
+    <a class="cart-count"><ion-icon name="cart-outline"></ion-icon>
+    <span>0</span></a>
   </div>
   <!-- Actual Content, I added the div to distance it from the edge-->
-  <div style="display:flex;flex-direction:row;">
-    <!-- Product Cards -->
+  <div class="container">
     <div class="product-card">
       <h1>Blue Clover</h1>
       <p>The King of Ecstasy</p>
@@ -39,6 +39,15 @@
       <image class="product-pic" src="src\products\green_pill.png"></image>
       <div class="price-add-to-cart">
         <div class="product-price">₿0.0044</div>
+        <a href="#" class="product-button">Add to Cart</a>
+      </div>
+    </div>
+    <div class="product-card">
+      <h1>Purple Flower</h1>
+      <p>A night of fluffy happieness</p>
+      <image class="product-pic" src="src\products\purple_pill.png"></image>
+      <div class="price-add-to-cart">
+        <div class="product-price">₿0.0021</div>
         <a href="#" class="product-button">Add to Cart</a>
       </div>
     </div>

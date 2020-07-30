@@ -16,8 +16,7 @@ body {
   background: white;
   padding: 40px;
   text-transform: uppercase;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 20px;
 }
 
 .product-card h1 {
@@ -75,4 +74,10 @@ body {
   flex-direction: row;
   padding: 20px;
   padding-right: 55px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
