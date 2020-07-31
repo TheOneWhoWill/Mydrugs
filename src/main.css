@@ -18,39 +18,34 @@ button {
   outline: none;
 }
 
-
-#biglogos {
-font-weight:bold;
-font-size:70px;	
-font-family:Panton;
-color:white;
-	
+.biglogos {
+  font-weight:bold;
+  font-size:70px;	
+  font-family:Panton;
+  color:white;
 }
 
-#SHOP {
-margin-left:10%;
-position:relative;
-z-index:3;
-float:top;
-
+.mainWrapper .item {
+  position:relative;
+  z-index:3;
+}
+.clear {
+  clear: both;
 }
 
-#FAQ {
-margin-right:10%;
-position:relative;
-z-index:3;
-float:right;
-margin-top:-20%;
+.float-left {
+  float: left;
+}
 
+.float-right {
+  float: right;
 }
 
 #wrapperTbl{
 	float:top;
 }
 
-
 #mainIMG {
-	
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -59,11 +54,10 @@ margin-top:-20%;
 }
 
 #mainWrapper{
-  width:90%;
+  width:80%;
   margin: auto;
   height:90%;
   z-index:1;
-
 }
 
 button:hover {
