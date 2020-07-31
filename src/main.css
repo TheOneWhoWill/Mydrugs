@@ -1,0 +1,126 @@
+.headerBar {
+  width: 100%;
+  height: 90px;
+}
+
+body {
+  background-color: #0B0C0B;
+}
+
+button {
+  color: white;
+  background-color: #0f1110;
+  border-radius: 10px;
+  height: 40px;
+  width: 90px;
+  font-size: 25px;
+  border: 2px solid grey;
+  outline: none;
+}
+
+
+#biglogos {
+font-weight:bold;
+font-size:70px;	
+font-family:Panton;
+color:white;
+	
+}
+
+#SHOP {
+margin-left:10%;
+position:relative;
+z-index:3;
+float:top;
+
+}
+
+#FAQ {
+margin-right:10%;
+position:relative;
+z-index:3;
+float:right;
+margin-top:-20%;
+
+}
+
+#wrapperTbl{
+	float:top;
+}
+
+
+#mainIMG {
+	
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  z-index:2;
+}
+
+#mainWrapper{
+  width:90%;
+  margin: auto;
+  height:90%;
+  z-index:1;
+
+}
+
+button:hover {
+  height: 44px;
+  width: 99px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: bold;
+  font-family: 'Roboto';
+}
+
+.right {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+ion-icon {
+  color: white;
+  font-size: 50px;
+}
+
+.button {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.logo {
+  margin: auto;
+  width: 75px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.logo img {
+  margin: auto;
+  width: 75px;
+}
+
+.mainHeader {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 300px 75px 300px;
+  justify-content: space-around;
+}
+
+@font-face {
+    font-family: Panton;
+    src: url("Panton.otf") format("opentype");
+}
