@@ -22,7 +22,7 @@ function cartNumbers() {
     document.querySelector('.cart-count span').textContent = productNumbers + 1;
   } else {
     localStorage.setItem('cartNumbers', 1);
-    document.querySelector('cart span').textContent = 1;
+    document.querySelector('.cart-count span').textContent = 1;
   }
 }
 
