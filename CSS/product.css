@@ -12,6 +12,7 @@ body {
 }
 
 .product-card {
+  box-shadow: 6px 6px 30px #000000;
   width: 400px;
   background: white;
   padding: 40px;
@@ -65,11 +66,11 @@ body {
 }
 
 .cart-count ion-icon {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .cart-count {
-  font-size: 45px;
+  font-size: 27px;
   display: flex;
   flex-direction: row;
   padding: 20px;
@@ -77,7 +78,43 @@ body {
 }
 
 .container {
+  padding-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.header {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: white;
+  border-radius: 20px;
+  min-width: 100px;
+}
+
+.logo {
+  padding-top: 15px;
+  width: 70px;
+  height: auto;
+  display: flex;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.blue {
+  color: #00b4ff;
+}
+
+.green {
+  color: #00e357;
+}
+
+.purple {
+  color: #b300ff;
+}
+
+.red {
+  color: #f00c0c;
 }

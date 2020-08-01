@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>MyDrugs | SHOP</title>
   <!-- Page Icon -->
   <link rel="shortcut icon" type="image/x-icon"
   href="src/logos/favicon/favicon.ico">
   <!-- Ion Icons -->
-  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+  <script type="module"
+  src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule=""
+  src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.js"></script>
   <!-- Jquery -->
   <script
   src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -15,40 +19,51 @@
   rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CSS/product.css">
 </head>
-<title>MyDrugs | SHOP</title>
 <body>
+  <img class="logo" src="src/logos/White Logo.png">
   <!-- Shopping Cart -->
-  <div style="display:flex;flex-direction:row-reverse;">
-    <a class="cart-count"><ion-icon name="cart-outline"></ion-icon>
-    <span>0</span></a>
+  <div class="header">
+    <a class="cart-count" style="padding:10px;">
+      <ion-icon name="cart-outline"></ion-icon>
+      <span>0</span>
+    </a>
   </div>
   <!-- Actual Content, I added the div to distance it from the edge-->
   <div class="container">
-    <div class="product-card">
+    <div class="product-card blue">
       <h1>Blue Clover</h1>
       <p>The King of Ecstasy</p>
       <image class="product-pic" src="src\products\blue_pill.png"></image>
       <div class="price-add-to-cart">
         <div class="product-price">₿0.0021</div>
-        <a href="#" class="product-button">Add to Cart</a>
+        <a href="#" class="product-button blue">Add to Cart</a>
       </div>
     </div>
-    <div class="product-card">
+    <div class="product-card green">
       <h1>Green Snowflake</h1>
       <p>Packs A Powerful Punch</p>
       <image class="product-pic" src="src\products\green_pill.png"></image>
       <div class="price-add-to-cart">
         <div class="product-price">₿0.0044</div>
-        <a href="#" class="product-button">Add to Cart</a>
+        <a href="#" class="product-button green">Add to Cart</a>
       </div>
     </div>
-    <div class="product-card">
+    <div class="product-card purple">
       <h1>Purple Flower</h1>
       <p>A night of fluffy happieness</p>
       <image class="product-pic" src="src\products\purple_pill.png"></image>
       <div class="price-add-to-cart">
         <div class="product-price">₿0.0021</div>
-        <a href="#" class="product-button">Add to Cart</a>
+        <a href="#" class="product-button purple">Add to Cart</a>
+      </div>
+    </div>
+    <div class="product-card red">
+      <h1>Red Pill</h1>
+      <p>Your Ticket to wonderland</p>
+      <image class="product-pic" src="src\products\red_pill.png"></image>
+      <div class="price-add-to-cart">
+        <div class="product-price">₿0.0013</div>
+        <a href="#" class="product-button red">Add to Cart</a>
       </div>
     </div>
   </div>

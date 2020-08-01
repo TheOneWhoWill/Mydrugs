@@ -8,8 +8,8 @@ body {
 
 .mainHeader {
   display: grid;
-  grid-column-gap: 40px;
-  grid-template-columns: 300px 75px 300px;
+  grid-column-gap: 20px;
+  grid-template-columns: auto auto auto;
   justify-content: space-around;
 }
 
@@ -74,10 +74,13 @@ ion-icon {
   width: 75px;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: pink;
 }
 
 .logo img {
   margin: auto;
   width: 75px;
+}
+
+nav {
+  padding: 20px;
 }
