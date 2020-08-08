@@ -1,5 +1,7 @@
 * {
-  user-select: 32none;
+  user-select: none;
+  overflow-y: hidden;
+  margin: 0px;
 }
 
 body {
@@ -7,19 +9,23 @@ body {
 }
 
 .mainHeader {
-  display: grid;
-  grid-column-gap: 20px;
-  grid-template-columns: auto auto auto;
+  width: 100%;
+  display: flex;
   justify-content: space-around;
+  font-size: 50px;
 }
 
-a {
+.mainHeader div {
+  text-align: center;
+  width: 20%;
   text-decoration: none;
   color: white;
-  padding-left: 40px;
-  padding-right: 40px;
   font-weight: bold;
   font-family: 'Roboto';
+}
+
+.img {
+  width: 20%;
 }
 
 #nextBtn {
@@ -54,33 +60,7 @@ a {
   user-select: none;
 }
 
-.left {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.right {
-  grid-column-start: 3;
-  grid-column-end: 4;
-}
-
 ion-icon {
   color: white;
   font-size: 50px;
-}
-
-.logo {
-  margin: auto;
-  width: 75px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.logo img {
-  margin: auto;
-  width: 75px;
-}
-
-nav {
-  padding: 20px;
 }
