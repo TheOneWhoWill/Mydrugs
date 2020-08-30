@@ -1,0 +1,123 @@
+* {
+  transition: 0.3s;
+  font-family: arial;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+.register {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: rgba(232, 232, 232, 0.25);
+  width: 500px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.form {
+  height: 50px;
+  width: 314px;
+  position: relative;
+  background: none;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #0e0e0e;
+  border: 2px solid #818384;
+  border-radius: 4px;
+}
+
+.form input {
+  width: 100%;
+  margin-left: 20px;
+  height: 100%;
+  background: none;
+  padding-top: 20px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.form label {
+  position: absolute;
+  bottom: 20%;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.form label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -1px;
+  height: 100%;
+  width: 100%;
+  transition: all 0.3 ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  font-size: 11px;
+  transform: translateY(-100%);
+}
+
+.submit {
+  background: none;
+  width: 200px;
+  padding: 10px;
+  background-color: #0e0e0e;
+  border: 2px solid #818384;
+  border-radius: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+}
+
+.verification input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.verification {
+  width: 314px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-start;
+  font-size: 20px;
+}

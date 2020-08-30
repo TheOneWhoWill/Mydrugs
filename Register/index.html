@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyDrugs | Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+  </head>
+  <body>
+    <div class="header">
+      <h2>Shop</h2>
+      <h2>Faq</h2>
+      <img class="logo" src="../src/logos/White Logo.png" alt="logo">
+      <h2>Safety</h2>
+      <h2>Contact</h2>
+    </div>
+
+    <form class="register" action="index.html" method="post">
+
+      <h1>Register</h1>
+
+      <div class="form">
+        <input
+        type="text"
+        name="Username"
+        autocomplete="off"
+        required>
+        <label for="Username" class="label-name">
+          <span class="content-name">Username</span>
+        </label>
+      </div>
+
+      <div class="form">
+        <input
+        type="text"
+        name="Email"
+        autocomplete="off"
+        required>
+        <label for="Email" class="label-name">
+          <span class="content-name">Email or phone number</span>
+        </label>
+      </div>
+
+      <div class="form">
+        <input
+        type="password"
+        name="Password"
+        autocomplete="off"
+        required>
+        <label for="Password" class="label-name">
+          <span class="content-name">Enter Password</span>
+        </label>
+      </div>
+
+      <div class="form">
+        <input
+        type="password"
+        name="Password"
+        autocomplete="off"
+        required>
+        <label for="Password" class="label-name">
+          <span class="content-name">Confirm Password</span>
+        </label>
+      </div>
+
+      <div class="verification">
+        <input type="checkbox" name="confirm" onclick="verify()" required>
+        <label>I am a Human</label>
+      </div>
+
+      <input type="submit" name="SignUp" value="Register" class="submit">
+    </form>
+
+    <?php
+    $username = $_POST["Username"];
+    $email = $_POST["Email"];
+    $password = $_POST["pass"];
+    $servername = "localhost";
+    $phpusername = "Admin";
+    $svrpassword = "secret";
+    $database = "mydrugs";
+    $conn = mysqli_connect($servername, $phpusername, $svrpassword, $database);
+    $query = "INSERT INTO `users` (`Username`, `Email`, `Password`) VALUES ('$username', '$email', '$password')";
+    $result = mysqli_query($conn, $query)
+    ?>
+
+    <script src="../src/register.js"></script>
+  </body>
+</html>

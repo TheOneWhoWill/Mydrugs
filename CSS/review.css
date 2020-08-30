@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  transition: 0.3s;
+}
+
+body {
+  background-color: #0e0e0e;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header img {
+  width: 8%;
+  height: auto;
+}
+
+.mainContent {
+  width: 640px;
+  margin: auto;
+}
+
+.searchArea {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searchArea * {
+  height: 38px;
+  padding: 5px;
+}
+
+.searchArea img {
+  border-radius: 50%;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #272729;
+  color: #818384;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.searchBar * {
+  color: #818384;
+}
+
+.searchBar input {
+  background: none;
+  border: none;
+  width: 100%;
+  outline: none;
+  position: relative;
+}
+
+.searchIcon {
+  color: #818384;
+  padding: 5px;
+  transform: translateY(5px);
+}
+
+.createPost {
+  color: #818384;
+  padding: 5px;
+  transform: translateY(5px);
+  font-size: 35px;
+}
+
+.createPost:hover {
+  transform: scale(1.2);
+}
+
+.review {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text {
+  display: flex;
+  padding-top: 10px;
+}
+
+.text p {
+  width: 80%;
+  color: white;
+}
+
+.vote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  width: 20%;
+}
+
+.upvote {
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #818384;
+}
+
+.upvote:hover {
+  color: #8A2BE2;
+}
+
+.downvote {
+  font-size: 30px;
+  background: none;
+  border: none;
+  outline: none;
+  color: #818384;
+}
+
+.downvote:hover {
+  color: #8A2BE2;
+}
+
+.Stars {
+  display: flex;
+}
+
+.Stars * {
+  color: #8A2BE2;
+  font-size: 30px;
+}
