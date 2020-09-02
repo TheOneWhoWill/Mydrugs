@@ -47,6 +47,7 @@ ion-icon {
 }
 
 /*Header*/
+
 .header {
   width: 100%;
   font-size: 20px;
@@ -86,4 +87,28 @@ ion-icon {
   grid-column-start: 2;
   grid-column-end: 3;
 }
+
+.burger {
+  display: none;
+  font-size: 50px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  margin-right: 40px;
+}
+
+/*Mobile Optimization*/
+
+@media screen and (max-width: 1000px) {
+  #left, #right {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+/*End of Mobile Optimization*/
+
 /*End of header*/

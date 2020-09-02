@@ -144,7 +144,7 @@ h1 {
 
 /*Mobile Optimization*/
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 4000px) {
   #left, #right {
     display: none;
   }
