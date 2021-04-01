@@ -4,7 +4,7 @@
 *MyDrugs does not actually sell any illegal/controlled substances.*
 
 ### Currently being developed by:
-* Cybercrafter345
+* Cybercrafter345 / TheOneWhoWill
 * nrxero
 * lukesfridge
 * Faulzy
