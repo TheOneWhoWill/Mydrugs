@@ -1,0 +1,24 @@
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0e0e0e;
+  padding: 20px;
+  height: 110px;
+}
+
+.header-item {
+  display: flex;
+  width: 500px;
+  h2 {
+    color: white;
+    font-size: 37px;
+    font-family: Arial;
+  }
+  justify-content: space-around;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+}
