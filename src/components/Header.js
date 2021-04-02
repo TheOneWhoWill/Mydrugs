@@ -16,7 +16,7 @@ function Header() {
         <h2 onClick={() => handleRedirect('/shop')}>SHOP</h2>
         <h2 onClick={() => handleRedirect('/faq')}>FAQ</h2>
       </div>
-      <div className="header-item logo">
+      <div className="header-item logo" onClick={() => handleRedirect('/')}>
         <img src={Logo} alt="mydrugs logo"/>
       </div>
       <div className="header-item">
