@@ -8,5 +8,19 @@ html {
   background-color: #0e0e0e;
 }
 
+body {
+  background-color: #0e0e0e;
+}
+
+::-webkit-scrollbar {width: 0.6vh}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 0.4vh;
+}
+
+
 @import './header.scss';
 @import './body.scss';
+@import './faq.scss';
+@import './shop.scss';

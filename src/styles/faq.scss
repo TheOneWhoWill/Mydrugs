@@ -1,0 +1,36 @@
+.FAQ {
+  height: 87.5vh;
+  overflow-y: scroll;
+  h1 {
+    color: white;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    font-size: 4.75vh;
+    line-height: 100px;
+    text-align: center;
+  }
+  .faqContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    .faqQuestionContainer {
+      margin-bottom: 5vh;
+      max-width: 1000px;
+      min-width: 700px;
+      .faq-question {
+        color: white;
+        line-height: 60px;
+        margin-bottom: 3vh;
+        letter-spacing: 1.5px;
+      }
+      p {
+        line-height: 30px;
+        font-weight: 300;
+        font-size: 20px;
+        color: rgb(212, 212, 212);
+      }
+    }
+  }
+}

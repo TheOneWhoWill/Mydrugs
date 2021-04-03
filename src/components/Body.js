@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import Slider1 from '../images/SliderImages/logo_main_page.png';
 import Slider2 from '../images/SliderImages/Slide_Blue_Pill.jpg';
