@@ -1,0 +1,74 @@
+.Contact {
+  display: flex;
+  height: 87.5vh;
+  overflow-y: scroll;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  .contactSection {
+    width: 100%;
+    height: 60rem;
+    padding: 2.5rem;
+    margin-top: 4rem;
+    max-width: 1000px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 1rem;
+    border: 2px solid white;
+    .mainContact {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+.contributersSection {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  .contributer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 2px solid white;
+  }
+}
+
+.gitHub, .twitter, .discord, .reddit {
+  width: 14rem;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  color: white;
+  border: 2px solid;
+  align-items: center;
+  border-radius: 0.5rem;
+  .icon {
+    font-size: 1.5rem;
+  }
+  .link {
+    color: white;
+    margin-left: 0.5rem;
+    text-decoration: none;
+  }
+}
+
+.gitHub {
+  border-color: #484f58;
+  background-color: #484f58;
+}
+
+.twitter {
+  border-color: rgba(29,161,242,1.00);
+  background-color: rgba(29,161,242,1.00);
+}
+
+.discord {
+  border-color: #7289da;
+  background-color: #7289da;
+}
+
+.reddit {
+  border-color: #FF4500;
+  background-color: #FF4500;
+}

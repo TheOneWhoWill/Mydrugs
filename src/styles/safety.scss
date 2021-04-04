@@ -1,0 +1,45 @@
+.Safety {
+  display: flex;
+  height: 87.5vh;
+  overflow-y: scroll;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  .safetySection {
+    display: flex;
+    height: 30rem;
+    padding: 2.5rem;
+    max-width: 750px;
+    margin-top: 4rem;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    .safetyLeft {
+      color: white;
+      height: 100%;
+      .safetyItalics {
+        font-weight: 300;
+        font-style: italic;
+        line-height: 3rem;
+      }
+      h1 {
+        font-weight: bold;
+      }
+      h6 {
+        line-height: 2.3rem;
+        font-weight: 300;
+      }
+      p {
+        line-height: 2rem;
+        font-size: 1.2rem;
+        text-align: justify;
+      }
+    }
+    img {
+      user-select: none;
+      filter: brightness(0) invert(1);
+    }
+  }
+}

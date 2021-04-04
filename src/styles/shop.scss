@@ -1,7 +1,8 @@
 .Shop {
   height: 87.5vh;
   overflow-y: scroll;
-  h1 {
+  font-family: 'Roboto', sans-serif;
+  .shopHeader {
     color: white;
     margin-top: 6vh;
     margin-bottom: 6vh;
@@ -11,31 +12,213 @@
   }
   .productsContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     margin-left: 10vh;
     margin-right: 10vh;
-    .productCard {
-      display: flex;
-      padding: 20px;
-      width: 294px;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 1vh;
-      border: 2px solid white;
-      box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
-      img {
-        width: 56px;
-        height: 56px;
-        border-radius: 1vh;
-        justify-self: center;
-      }
-      .productCardBottom {
-        width: 100%;
-        p {
-          color: white;
+    .shopCarousel {
+      width: 100%;
+      .shopCarouselItem {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 1vh;
+        }
+        .shopCarouselCaption {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: justify;
+          margin: 0;
+          h5 {
+            font-size: 6vh;
+            margin-top: 1vh;
+            font-weight: bold;
+          }
+          h4 {
+            font-size: 8vh;
+            font-weight: 300;
+          }
+          h2 {
+            font-size: 90px;
+          }
+          h1 {
+            font-size: 130px;
+            font-weight: bold;
+            line-height: 12vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+          }
+          .safetyItalics {
+            font-style: italic;
+          }
         }
       }
     }
+  }
+}
+.popularCarousel {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rowLabel, .newLabel {width: 100%;color: white}
+.newLabel {text-align: center;margin-bottom: 4rem;}
+.rowLabel {margin-left: 3rem;}
+
+.mostPopular {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 4rem;
+  justify-content: space-between;
+}
+
+.productCard {
+  width: 18rem;
+  height: 26rem;
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 2px solid white;
+  background-color: #0e0e0e;
+  color: white;
+  .productImage {
+    width: 15rem;
+    height: 15rem;
+    align-self: center;
+  }
+  .cardBottom {
+    display: flex;
+    .cardText {
+      width: 7rem;
+    }
+  }
+}
+
+.prices {
+  transform: translateX(-3rem);
+}
+
+.btcPrice {
+  width: 7rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: darkorange;
+}
+
+.ethPrice {
+  width: 7rem;
+  margin: 1rem;
+  padding: 0.25rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  background-color: silver;
+}
+
+.altText {display: none}
+
+.newAddition {
+  width: 100%;
+  display: flex;
+  color: white;
+  padding: 2.5rem;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  border-radius: 1rem;
+  border: 2px solid white;
+  .stars {
+    font-size: 1.5rem;
+  }
+  .newMark {
+    color: purple;
+    font-weight: 300;    
+    line-height: 1rem;
+    font-size: 1.1rem;
+    font-style: italic;
+    animation: newAdditionAnimation 5s infinite;
+  }
+  .blurbParagraph {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    line-height: 2.1rem;
+  }
+  .newAdditionImg {
+    img {
+      width: 26rem;
+      height: 26rem;
+    }
+  }
+}
+
+@keyframes newAdditionAnimation {
+  0%   {color: rgb(255, 230, 0)}
+  25%   {color: rgb(255, 153, 0)}
+  50%   {color: rgb(0, 174, 255)}
+  100%   {color: rgb(0, 255, 13)}
+}
+
+@media screen and (max-width: 1636px) {
+  .altText:nth-child(1) {
+    font-size: 90px;
+    font-weight: bold;
+  }
+  .altText {
+    font-size: 86px;
+    display: inline-block;
+  }
+  .shopCarouselCaption {
+    h5 {display: none}
+    h4 {display: none}
+    h2 {display: none}
+    h1 {display: none}
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .productCard {
+    transform: scale(0.9);
+  }
+  .altText:nth-child(1) {
+    font-size: 60px;
+    font-weight: bold;
+  }
+  .altText {
+    font-size: 43px;
+    display: inline-block;
+  }
+  .shopCarouselCaption {
+    h5 {display: none}
+    h4 {display: none}
+    h2 {display: none}
+    h1 {display: none}
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .altText:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .altText {
+    font-size: 32px;
+    line-height: 32px;
+    display: inline-block;
+  }
+  .shopCarouselCaption {
+    h5 {display: none}
+    h4 {display: none}
+    h2 {display: none}
+    h1 {display: none}
+  }
+}
+
+@media screen and (max-width: 693px) {
+  .shopCarousel {
+    display: none;
   }
 }
