@@ -10,5 +10,5 @@
 * Faulzy
 
 **How To Sell Drugs Online Fast is available to watch on Netflix** ([Watch](https://www.netflix.com/title/80218448))
-<hr>
+
 **Live Website hosted by** [Firebase](https://mydrugs123.web.app/)
