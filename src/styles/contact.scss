@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
   .contactSection {
     width: 100%;
-    height: 60rem;
+    height: 45rem;
     padding: 2.5rem;
     margin-top: 4rem;
     max-width: 1000px;
@@ -17,24 +17,28 @@
     .mainContact {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
     }
   }
 }
 
 .contributersSection {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   flex-direction: column;
   .contributer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-top: 2px solid white;
+    justify-content: space-between;
   }
 }
 
-.gitHub, .twitter, .discord, .reddit {
+.contactHeading {color: white;text-align: center}
+
+.gitHub, .twitter, .discord, .reddit, .instagram {
   width: 14rem;
   margin: 1rem;
   padding: 1rem;
@@ -43,32 +47,12 @@
   border: 2px solid;
   align-items: center;
   border-radius: 0.5rem;
-  .icon {
-    font-size: 1.5rem;
-  }
-  .link {
-    color: white;
-    margin-left: 0.5rem;
-    text-decoration: none;
-  }
+  .icon {font-size: 1.85rem}
+  .link {color: white;margin-left: 0.5rem;text-decoration: none}
 }
 
-.gitHub {
-  border-color: #484f58;
-  background-color: #484f58;
-}
-
-.twitter {
-  border-color: rgba(29,161,242,1.00);
-  background-color: rgba(29,161,242,1.00);
-}
-
-.discord {
-  border-color: #7289da;
-  background-color: #7289da;
-}
-
-.reddit {
-  border-color: #FF4500;
-  background-color: #FF4500;
-}
+.gitHub {border-color: #484f58;background-color: #484f58}
+.twitter {border-color: rgba(29,161,242,1.00);background-color: rgba(29,161,242,1.00)}
+.discord {border-color: #7289da;background-color: #7289da}
+.reddit {border-color: #FF4500;background-color: #FF4500}
+.instagram {border-color: white;background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)}
