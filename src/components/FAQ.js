@@ -6,7 +6,7 @@ function Faq() {
       <h1>Frequently Asked Questions</h1>
       <div className="faqContainer">
         <div className="faqQuestionContainer">
-          <h2 className="faq-question">Is my purshase completely secure through your shop when I make a Purchase?</h2>
+          <h2 className="faq-question">Is my purchase completely secure through your shop when I make a Purchase?</h2>
           <p className="faq-answer">Yes. Just add the desired quantity to the cart and enter your address at the checkout. Your personal data is automatically encrypted using PGP and deleted after the order is dispatched. Our team of professionals then packs the goods in clean-room conditions, and ensures smooth and secure processing.</p>
         </div>
         <div className="faqQuestionContainer">
